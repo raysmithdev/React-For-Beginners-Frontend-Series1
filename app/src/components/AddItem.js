@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, FormGroup, FormControl, Button } from 'react-bootstrap'
 
-const AddItem = ({ addItem}) => {
+const AddItem = ({ addItem }) => {
   return (
     <Form
       onSubmit={(e) => {
