@@ -1,5 +1,7 @@
 # React-For-Beginners
 
+This is a multi part workshop series to help students learn more about building a web app with React, also introducing Redux.
+
 # Libraries Used
 - Create React App [https://github.com/facebookincubator/create-react-app]
 - React Bootstrap [https://react-bootstrap.github.io/]
