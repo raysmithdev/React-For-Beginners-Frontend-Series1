@@ -19,6 +19,7 @@ This is a multi part workshop series to help students learn more about building 
 ## Redux
 - Redux docs [http://redux.js.org/docs/introduction/]
 - Redux Video series (Wes Bros) [https://learnredux.com/]
+
 ## JavaScript
 - ES6 [https://github.com/lukehoban/es6features]
 - #JavaScript30 by Wes Bros [https://javascript30.com/]
