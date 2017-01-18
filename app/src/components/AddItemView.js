@@ -1,14 +1,14 @@
 import React from 'react'
 import { Form, FormGroup, FormControl, Button } from 'react-bootstrap'
 
-const AddItem = ({ addItem }) => {
+const AddItemView = ({ addItem }) => {
   return (
     <Form
-      onSubmit={(e) => {
-        e.preventDefault()
-        let userInput = e.target.userInput.value
+      onSubmit={(event) => {
+        event.preventDefault()
+        let userInput = event.target.userInput.value
         addItem(userInput)
-        e.target.userInput.value = ''
+        event.target.userInput.value = ''
       }}
       inline
     >
@@ -22,4 +22,4 @@ const AddItem = ({ addItem }) => {
   );
 }
 
-export default AddItem
+export default AddItemView

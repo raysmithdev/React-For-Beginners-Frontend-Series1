@@ -2,7 +2,7 @@ import React from 'react'
 import { PageHeader } from 'react-bootstrap'
 import AboutText from './AboutText'
 
-const About = () => {
+ const About = () => {
   return (
     <div>
       <PageHeader>

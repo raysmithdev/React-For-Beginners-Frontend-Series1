@@ -4,11 +4,17 @@ import App from './App'
 import About from './components/About'
 import './index.css'
 import { Router, Route, hashHistory } from 'react-router'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from './reducers'
 
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 render((
-  <Router history={hashHistory}>
-    <Route path="/" component={App} />
-    <Route path="/about" component={About} />
-  </Router>
+  <Provider store={store} >
+    <Router history={hashHistory}>
+      <Route path="/" component={App} />
+      <Route path="/about" component={About} />
+    </Router>
+  </Provider>
 ), document.getElementById('root'))
