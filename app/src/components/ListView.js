@@ -5,7 +5,7 @@ const ListView = ({ todos }) => {
   return (
     <ListGroup>
       {todos.map((todo, index) => {
-        return <ListGroupItem key={index}>{todo.name}</ListGroupItem>
+        return <ListGroupItem key={index}>{todo.text}</ListGroupItem>
       })}
     </ListGroup>
   )

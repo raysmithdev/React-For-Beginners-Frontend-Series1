@@ -1,11 +1,8 @@
 const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case 'RECEIVE_POSTS':
       return [
-        ...state,
-        {
-          name: action.name
-        }
+        ...action.todos
       ]
 
     default:
