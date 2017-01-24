@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
 import AddItemView from '../components/AddItemView'
-import { addToDo } from '../actions'
+import { savePost } from '../actions'
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addItem: (name) => {
-      return dispatch(addToDo(name))
+    savePost: (postName) => {
+      return dispatch(savePost(postName))
     }
   }
 }

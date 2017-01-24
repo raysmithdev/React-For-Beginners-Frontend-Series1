@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import ListView from '../components/ListView'
+import { deletePost } from '../actions'
 
 // This function is used to get state from Redux
 // & let some of that state equal to a prop so we can pass
@@ -14,7 +15,7 @@ const mapStateToProps = (state) => {
 // from our React app so we can update the state in Redux
 const mapDispatchToProps = (dispatch) => {
   return {
-
+    deletePost: (id) => dispatch(deletePost(id))
   }
 }
 
